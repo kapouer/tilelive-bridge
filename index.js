@@ -78,7 +78,6 @@ Bridge.prototype.update = function(opts, callback) {
                     base:this._base + '/'
                 }, function(err) {
                     if (err) return callback(err);
-                    map.bufferSize = 256;
                     return callback(err, map);
                 });
             }.bind(this),
